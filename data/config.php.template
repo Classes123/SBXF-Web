@@ -23,7 +23,7 @@ define('SB_WP_URL','');       				//URL of SourceBans Site
 define('USE_CSRF',  false);
 
 //define('XF_API_URL', '');                 // XenForo API url
-//define('XF_API_KEY', '');                 // XenForo API key (must be a superuser key and have an "auth" scope)
+//define('XF_API_KEY', '');                 // XenForo API key (must be a superuser key and have "auth" and "user:read" scopes)
 
 //define('DEVELOPER_MODE', true);			// Use if you want to show debugmessages
 //define('SB_MEM', '128M'); 				// Override php memory limit, if isn't enough (Banlist is just a blank page)
