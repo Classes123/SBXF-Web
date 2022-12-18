@@ -48,10 +48,13 @@ $theme->assign('redir', "DoLogin('p=account'); '".(isset($_SESSION['q'])?$_SESSI
  * 0 - Default (login-password and Steam)
  * 1 - Only login-password
  * 2 - Only Steam
+ * 3 - Only login-password using XenForo
+ * 4 - Login-password using XenForo and Steam
  **/
 $at = isset($GLOBALS['config']['auth.type'])?$GLOBALS['config']['auth.type']:0;
-$theme->assign('steam_allowed', ($at != 1));
+$theme->assign('steam_allowed', ($at != 1 && $at != 3));
 $theme->assign('login_allowed', ($at != 2));
+$theme->assign('is_xenforo', ($at == 3 || $at == 4));
 // === Authorization by type -  END  ===
 
 $theme->left_delimiter = "-{";
