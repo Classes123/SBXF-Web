@@ -1,3 +1,6 @@
+> [!CAUTION]
+> Версия содержит [уязвимости](https://gist.github.com/ng-dst/ca6663a4107fd39eaba1be2cb1d52b51). Не использовать в продакшене.
+
 ### Требования:
 - **[[PBY] Exnteded API (1.0.0+)](https://github.com/PluginsByYoung/PBY-EApi)**
 
